@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+    <script src="./buffer_to_wav.js"></script>
+    <title>Audio Cutter</title>
+</head>
+
+<body>
+    <div id="main-wrap">
+        <div id="container">
+            <div id="header">
+                <p>Audio Cutter</p>
+            </div>
+
+            <div id="select-sec">
+                <div id="btn-wrap1">
+                    <button id="select-btn">Select Audio</button>
+                    <button id="cancel-btn" disabled>❌</button>
+                </div>
+                <p>...</p>
+                <audio src="" controls></audio>
+                <input type="file" id="file-input" accept="audio/*">
+
+                <div id="st-wrap">
+                    <input type="number" id="st-input" disabled title="">
+                    <label for="st-input">Start Time: <span id="s-time">0:00</span></label>
+                </div>
+
+                <div id="et-wrap">
+                    <input type="number" id="et-input" disabled title="">
+                    <label for="et-input">End Time: <span id="e-time">0:00</span></label>
+                </div>
+
+                <div id="btn-wrap2">
+                    <button disabled id="play-btn">▶</button>
+                    <button disabled id="cut-btn">✂</button>
+                </div>
+            </div>
+
+            <div id="wrap2">
+                <div id="play-wrap">
+                    <audio src="" controls></audio>
+                </div>
+                <button id="download-btn" disabled>&darr; Download</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        Made By <a href="https://m9-gbr.github.io/portfolio/">M9GBR</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+#main-wrap {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+}
+
+#container {
+    padding: 20px;
+    background-color: rgb(100, 100, 255);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#container button {
+    border: none;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: calibri;
+    background-color: rgb(255, 255, 255);
+    transition: 0.1s scale;
+}
+
+#container button:not(:disabled) {
+    cursor: pointer;
+}
+
+#container button:hover:not(:disabled) {
+    background-color: rgb(200, 200, 200);
+}
+
+#container button:active:not(:disabled) {
+    scale: 0.8;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#header p {
+    font-size: 30px;
+}
+
+#select-sec {
+    margin-bottom: 20px;
+    background-color: rgb(50, 50, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#select-sec div:first-child {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#select-btn, #play-btn{
+    border-radius: 5px 0 0 5px !important;
+    margin-right: 5px;
+}
+
+#cancel-btn, #cut-btn {
+    border-radius: 0 5px 5px 0 !important;
+}
+
+#select-sec input[type="file"] {
+    display: none;
+}
+
+#select-sec p {
+    margin-bottom: 10px;
+    max-width: 300px;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+#select-sec input {
+    border: none;
+    width: 100px;
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+}
+
+#st-wrap {
+    margin-bottom: 1px;
+    margin-top: 10px;
+}
+
+#et-wrap {
+    margin-bottom: 10px;
+}
+
+#select-sec label span {
+    font-weight: bold;
+    background-color: rgb(20, 20, 255);
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#btn-wrap2 {
+    display: flex;
+    justify-content: center;
+}
+
+#wrap2 {
+    background-color: rgb(50, 50, 255);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#wrap2 #play-wrap {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f33;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px 5px 0 0;
+    color: white;
+    font-size: 20px;
+}
+
+#footer a {
+    color: white;
+}

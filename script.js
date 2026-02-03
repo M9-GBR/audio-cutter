@@ -151,11 +151,11 @@ cutBtn.addEventListener('click', () => {
 
 downloadBtn.addEventListener("click", () => {
     let a = document.createElement("a"),
-        nameArr = audioName.textContent.split(".")
+        nameArr = audioName.textContent.split(/\.(?=[^.]*$)/)
 
-    nameArr[nameArr.length - 2] = nameArr[nameArr.length - 2] + "(audio-cutter)"
+    nameArr.pop()
 
-    a.download = nameArr.join(".")
+    a.download = nameArr[0] + "(audio-cutter).wav"
     a.href = audioElem2.src
     a.click()
 })
